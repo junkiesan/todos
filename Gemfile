@@ -27,7 +27,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 2.3.0'
+  gem 'capybara', '~> 3.33.0'
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
