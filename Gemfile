@@ -28,6 +28,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.33.0'
+  gem 'database_cleaner'
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
