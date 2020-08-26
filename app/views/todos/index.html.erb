@@ -6,6 +6,9 @@
   <% @todos.each do |todo| %>
     <li class="<%= "completed" if todo.completed? %>">
       <%= todo.title %>
+      <% if todo.completed? %>
+        <%= button_to "Mark incomplete", todo_completion_path(todo)  %>
+      <% else %>
       <%= button_to "Mark complete", todo_completion_path(todo)  %>
     </li>
   <% end %>
